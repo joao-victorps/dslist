@@ -11,7 +11,7 @@ import com.jvps.dslist.dto.GameMinDTO;
 import com.jvps.dslist.servicies.GameService;
 
 @RestController
-@RequestMapping(value="/games")
+@RequestMapping(value = "/games")
 public class GameController {
 	
 	@Autowired

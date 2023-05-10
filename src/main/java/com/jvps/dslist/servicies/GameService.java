@@ -17,7 +17,7 @@ public class GameService {
 	
 	public List<GameMinDTO> findAll(){
 		List<Game> result = repository.findAll();
-		List<GameMinDTO> dto = result.stream().map(x -> new GameMinDTO(x)).toList(); //converte (map) o x(GAME) em um novo x(new GameMinDTO) em forma de lista(toList)
+		List<GameMinDTO> dto = result.stream().map(x -> new GameMinDTO(x)).toList(); //converte (map) o x(GAME) em um novo objeto (->) x(new GameMinDTO) em forma de lista(toList)
 		return dto;
 	}
 }
